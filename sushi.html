@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Resturent Sushi</title>
+
+   <!-- <script defer src="script.js"></script>-->
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .header {
+        position: relative;
+      }
+
+      .nav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 100;
+
+      }
+
+      .nav__links {
+        display: flex;
+        margin-right: 20px;
+        list-style: none;
+        padding: 0;
+      }
+
+      .nav__item {
+        margin: 0 10px;
+      }
+
+      .nav__link {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+  .hero-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      width: 100%;
+      max-width: 100px;
+    }
+
+     div {
+      position: relative;
+      left: 100px;
+      display: block;
+    }
+
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ccc;
+      }
+
+      h1{
+        color: #fff;
+      }
+      #foodList {
+        display: flex;
+        flex-wrap: wrap;
+        /*justify-content: space-between;*/
+      }
+
+      .food-container {
+        flex: 0 0 40%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        padding: 30px;
+        margin: 20px;
+        max-width: 40%;
+      }
+
+      @media (max-width: 600px) {
+        .food-container {
+          flex: 0 0 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+   <nav class="nav">
+      
+       <!--  <img 
+          src="img/logo.png"
+          alt="Logo"
+          class="nav__logo"
+          id="logo"
+          data-version-number="3.0"/>
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="indexsushi.html">Home</a>
+          </li>
+            <li class="nav__item dropdown">
+              <a class="nav__link" href="#section--3">Experience Aikawa &#9662;</a>
+              <div class="dropdown-content">
+                <a href="#">Aikawa Style</a>
+                <a href="#">Testimonials</a>
+                <a href="gallery.html">Gallery</a>
+              </div>
+            <li class="nav__item dropdown">
+              <a class="nav__link" href="#header__title">Menu &#9662;</a>
+              <div class="dropdown-content">
+                <a href="entree.html">Entrées</a>
+                <a href="#">Soups & Salads</a>
+                <a href="sushi.html">Sushi</a>
+                <a href="#">Chef’s Creations</a>
+                <a href="#">À La Carte</a>
+                <a href="#">Lunch Menu</a>
+                <a href="#">Desserts</a>
+                <a href="#">Wine List & Drinks</a>
+                <a href="#">Take Out / Delivery</a>
+                <a href="#">Discover Sushi</a>
+              </div>
+            </li>
+            
+            <li class="nav__item">
+              <a class="nav__link" href="#">Discover Sushi</a>
+            </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Take out/delivery</a>
+          </li>
+           
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contact.html">Contact Us</a>
+          </li>
+          
+        </ul>
+      </nav>-->
+      <div class="hero-image">
+        <video autoplay muted loop id="video-background">
+          <source src="img/sushi_video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-text">
+          <h1>Welcome to <span>Fauget Sushi</span></h1>
+          <h4></h4>
+        </div>
+      </div>
+    </header>
+
+    <br>
+    <div id="foodList"></div>
+
+    <script>
+      $(document).ready(function () {
+        $.getJSON('sushi.json')
+          .done(function (data) {
+            let str = "";
+            $.each(data.food, function (i, item) {
+              str += '<div class="food-container">';
+              str += '<img src="' + item.photo + '" alt="' + item.title + '">';
+              str += '<div>';
+              str += "<b>" + item.title + "</b><br>" + item.description + "<br>" + item.price;
+              str += '</div>';
+              str += '</div>';
+            });
+
+            $("#foodList").html(str);
+          })
+          .fail(function (jqxhr, textStatus, error) {
+            console.log("Request Failed: " + textStatus + ", " + error);
+          });
+      });
+    </script>
+  </body>
+</html>
+
+
+<!--<script>
+  $(document).ready(function(){
+    $.ajax({
+      url: 'json1.json',
+      dataType: 'json',
+      success: function(data) {
+        if (data && data.food && Array.isArray(data.food)) {
+          let foodList = $("#foodList");
+          data.food.forEach(function(foodItem) {
+            let foodContainer = $('<div class="food-container"></div>');
+            foodContainer.append('<img src="' + foodItem.photo + '" alt="' + foodItem.title + '">');
+            foodContainer.append('<div><b>' + foodItem.title + '</b><br>' + foodItem.author + '<br>' + foodItem.price + '</div>');
+            foodList.append(foodContainer);
+          });
+        } else {
+          console.error('Invalid JSON format or missing data in json1.json');
+        }
+      },
+      error: function(jqxhr, textStatus, error) {
+        console.error('Failed to fetch json1.json: ', textStatus, ', ', error);
+      }
+    });
+  });
+</script>
+
+<script>
+    $(document).ready(function(){
+      $.getJSON('json1.json', function(data) {
+        let x = data.food;
+        let str = "";
+
+        for (let i = 0; i < x.length; i++) {
+          str += '<div class="food-container">';
+          str += '<img src="' + data.food[i].photo + '" alt="' + data.food[i].title + '">';
+          str += '<div>';
+          str += "<b>" + data.food[i].title + "</b><br>" + data.food[i].author + "<br>" + data.food[i].price;
+          str += '</div>';
+          str += '</div>';
+        }
+
+        $("#foodList").html(str);
+      });
+    });
+  </script>
+   <style>
+    .food img {
+      max-width: 100px; 
+      margin-right: 20px; 
+    }
+    
+    img {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      width: 100%;
+      max-width: 80px;
+    }
+
+    div {
+      position: relative;
+      left: 100px;
+      display: block;
+    }
+
+    #foodList {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .food-container {
+      flex: 0 0 40%; 
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px;
+      max-width: 40%;
+    }
+
+    @media (max-width: 600px) {
+      .food-container {
+        flex: 0 0 100%;
+      }
+    }
+
+    .header {
+      position: relative;
+    }
+
+    .hero-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nav {
+      z-index: 100; 
+    }
+  </style>

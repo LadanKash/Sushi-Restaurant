@@ -1,0 +1,60 @@
+{
+ 
+    "entrer": [
+      {
+        "title": "Edamame",
+        "description": "Soybeans in their pod served with coarse salt",
+        "price": "$6"
+      },
+      {
+        "title": "Yam Tempura",
+        "description": "Sweet potato in a crispy tempura batter",
+        "price": "$7"
+      },
+      {
+        "title": "Tempura Légumes",
+        "description": "Variety of vegetables in a crispy tempura batter",
+        "price": "$8"
+      },
+      {
+        "title": "Agedashi Tofu",
+        "description": "Golden brown fried tofu topped with chopped shallots",
+        "price": "$8"
+      },
+      {
+        "title": "Haru Maki",
+        "description": "Japanese spring rolls flled with shrimp, chicken and vegetables",
+        "price": "$9"
+      },
+
+      {
+        "title": "Tempura Crevettes et Légumes",
+        "description": "Shrimp and vegetables in a crispy tempura batter",
+        "price": "$14"
+      },
+      {
+        "title": "Crabe à carapace molle",
+        "description": "Crispy tempura whole crab served with Ponzu sauce",
+        "price": "$16"
+      
+      },
+      {
+        "title": "Boeuf Sashimi",
+        "description": "Thinly sliced beef served with a spicy sauce",
+        "price": "$16"
+      
+      },
+      {
+        "title": "Calmar Grillé",
+        "description": "Whole grilled calmari served with a tangy sauce",
+        "price": "$16"
+       
+      },
+      {
+        "title": "Pétoncles et Avocat",
+        "description": "Lightly fried scallop served on half an avocado with a tangy sauce",
+        "price": "$11"
+      
+      }
+  ]
+}

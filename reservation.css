@@ -1,0 +1,52 @@
+body {
+    background-color: #e4ebeb;
+    color: #636363;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reservation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+
+  .reservation-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .party-selection,
+  .date-selection {
+    width: 50%;
+  }
+
+  .selected-info {
+    margin-top: 20px;
+  }
+
+  button {
+    width: 120px;
+    padding: 10px 20px; 
+    font-size: 16px;
+    background-color: rgb(60, 176, 118);
+    border: none;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  button:hover {
+    background-color: rgb(131, 179, 155);
+    color: #fff;
+  }
+  
+  #btn {
+    float: left;
+  }

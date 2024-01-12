@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- CSS Libraries -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="style.css">
+]
+ </head>
+    <title>Contact Us</title>
+    <style>
+    
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 30px;
+      }
+  
+      .form-container {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      input{
+        width: 300px;
+        height: 35px;
+      }
+      #message {
+        height: 200px;
+      }
+      label {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+       
+   #submit {
+  display: inline-block;
+  background-color: var(--color-primary);
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 300;
+  border: none;
+ 
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+ 
+  color: #fff;
+}
+.big-heading {
+font-family: Montserrat;
+  font-size:5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+  
+    </style>
+ 
+ <body>
+   <div>
+     <!-- Header Section -->
+     <header class="header">
+        <!-- Navigation -->
+        <nav class="nav">
+         <!-- Logo -->
+         <img src="img/logo.png" alt="Logo" class="nav__logo" id="logo">
+ <!-- Add a menu icon for mobile -->
+ <div class="nav__menu-icon">
+  <i class="fas fa-bars"></i>
+</div>
+
+         <!-- Navigation Links -->
+         <ul class="nav__links">
+          
+           <li class="nav__item">
+             <a class="nav__link" href="index.html">Home</a>
+           </li>
+             <li class="nav__item dropdown">
+               <a class="nav__link" href="#">Experience Fauget &#9662;</a>
+               <div class="dropdown-content">
+                 <a href="#">Fauget Style</a>
+                 <a href="#">Testimonials</a>
+                 <a href="gallery.html">Gallery</a>
+               </div>
+             <li class="nav__item dropdown">
+               <a class="nav__link" href="#header__title">Menu &#9662;</a>
+               <div class="dropdown-content">
+                 <a href="entree.html">Entrées</a>
+                 <a href="#">Soups & Salads</a>
+                 <a href="sushi.html">Sushi</a>
+                 <a href="#">Chef’s Creations</a>
+                 <a href="#">À La Carte</a>
+                 <a href="#">Lunch Menu</a>
+                 <a href="#">Desserts</a>
+                 <a href="#">Wine List & Drinks</a>
+                 <a href="#">Take Out / Delivery</a>
+                 <a href="customize.html">Discover Sushi</a>
+               </div>
+             </li>
+             
+             <li class="nav__item">
+               <a class="nav__link" href="customize.html">Discover Sushi</a>
+             </li>
+           <li class="nav__item">
+             <a class="nav__link" href="#">Take out/delivery</a>
+           </li>
+            
+           </li>
+           <li class="nav__item">
+             <a class="nav__link" href="contact-us.html">Contact Us</a>
+           </li>
+           
+         </ul>
+       </nav>
+  
+  <div class="hero-image">
+    <video autoplay muted loop id="video-background">
+      <source src="img/sushi-entree-video.mp4" type="video/mp4">
+    </video>
+  </div>
+    <div class="hero-text">
+      <h1 class="big-heading" style="font-size: 48px;">Contact Us</h1>
+      
+    </div>
+  </div>
+
+  <h1 style="margin-right: 50px; margin-top: 5%;"></h1>
+
+  <div class="container">
+    <div class="form-container">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+
+    <div></div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103598.52272956069!2d-74.0321418141597!3d40.70531193291799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2bc6c9b7c9%3A0xf7ef3bb1b815a59a!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1637238597799!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<footer>
+  <div class="footer-column">
+     <!-- Logo -->
+     <img src="img/logo.png" alt="Logo" class="nav__logo" id="logo" data-version-number="3.0">
+      <h3 style="margin-left: 50px;">Menu</h3>
+      <ul style="margin-left: 50px;">
+          <li>Take out/ Delivery</li>
+          <a href="reservation.html"><li style="text-decoration: none; color: white;">Reservation</li></a>
+          <a href="gallery.html"><li style="text-decoration: none; color: white;">Discover Sushi</li></a>
+          <a href="#"><li style="text-decoration: none; color: white;">Gift Cards</li></a>
+          <a href="#"><li style="text-decoration: none; color: white;">Testimonials</li></a>
+          <a href="gallery.html"><li style="text-decoration: none; color: white;">Gallery</li></a>
+          <a href="contact-us.html"><li style="text-decoration: none; color: white;">Contact Us</li></a>
+      </ul>
+  </div>
+  <div class="footer-column">
+      <h3>Hours Of Operation</h3>
+      <table>
+          <tr><td>Mon</td><td>closed</td></tr>
+          <tr><td>Tue</td><td>11:30am – 2pm<br>4:30pm – 9:30pm</td></tr>
+          <tr><td>Wed</td><td>11:30am – 2pm<br>4:30pm – 9:30pm</td></tr>
+          <tr><td>Thu</td><td>11:30am – 2pm<br>4:30pm – 9:30pm</td></tr>
+          <tr><td>Fri</td><td>11:30am – 2pm<br>4:30pm – 10:30pm</td></tr>
+          <tr><td>Sat</td><td>3pm- 10:30pm</td></tr>
+          <tr><td>Sun</td><td>3pm – 9:30pm</td></tr>
+      </table>
+  </div>
+  <div class="footer-column">
+    
+    <div class="map-responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103598.52272956069!2d-74.0321418141597!3d40.70531193291799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2bc6c9b7c9%3A0xf7ef3bb1b815a59a!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1637238597799!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <br>
+    <p style="color: #fff; font-size: 14px;">119 Sullivan St,<br> New York, NY 10012,<br>United States</p>
+    <p style="color: #fff; font-size: 14px;">(123) 555-5555<br>info@fauget.ca</p>
+</div>
+<section class="section section--black">
+  <div class="section__title">
+    <h3 style="color: #fff;">
+      Follow us
+    </h3>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/yourpage" target="_blank" class="social-icon"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/yourpage" target="_blank" class="social-icon"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://www.google.com/" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+    </div>
+  </div>
+</section>
+</footer>
+
+<script src="script.js"></script>
+
+  <script>
+    
+    function initMap() {
+   
+      const location = { lat: 40.7128, lng: -74.0060 }; 
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: location,
+        zoom: 15 
+      });
+
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: "Our Location"
+      });
+    }
+  </script>
+  
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+<script>
+  window.addEventListener('scroll', function() {
+    var nav = document.querySelector('.nav');
+    var header = document.querySelector('.header');
+  
+    if (window.scrollY > header.clientHeight) {
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');
+    }
+  });
+  </script> 
+
+<script>
+  // JavaScript to toggle the mobile menu
+document.querySelector('.nav__menu-icon').addEventListener('click', function () {
+document.querySelector('.nav__links').classList.toggle('active');
+});
+
+</script>
+</body>
+</html>

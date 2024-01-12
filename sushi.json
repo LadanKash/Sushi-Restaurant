@@ -1,0 +1,108 @@
+{
+ 
+    "food": [
+      {
+        "title": "Fauget Tuna (8 pcs)",
+        "description": "White tuna sashimi garnished <br>with fresh mango and grilled garlic.",
+        "price": "$22",
+        "photo": "img/Aikawa-tuna.jpg"
+      },
+      {
+        "title": "Atlantis (8 pcs)",
+        "description": "Crabstick, asparagus, fried carrot, tempura, </br> tobiko andavocado rolled in a soya bean leaf,<br>  topped with smoked-salmon.",
+        "price": "$21",
+        "photo": "img/Atlantis-is-for-smoked.jpg"
+      },
+      {
+        "title": "Besame Mucho (8 pcs)",
+        "description": "Spicy tuna, crispy tempura, cooked shrimps <br> and avocado rolled in a soya bean leaf.",
+        "price": "$22",
+        "photo": "img/jade2-1-300x200.jpg"
+      },
+      {
+        "title": "Salmon Sensation (8 pcs)",
+        "description": "Spicy salmon, avocado, lettuce, shiso leaf, tobiko.",
+        "price": "$21",
+        "photo": "img/Salmon-flavor-spicy-salmon.jpg"
+      },
+      {
+        "title": "Heaven* (6 pcs)",
+        "description": "6 Pieces of red tuna sashimi on grilled-rice <br> medallion, topped with shiso leaves rolled with smoked-salmon.",
+        "price": "$22",
+        "photo": "img/Heaven-300x200.jpg"
+      },
+
+      {
+        "title": "Rainbow Sashimi (9 pcs)",
+        "description": "Slices of tuna, salmon and white snapper sashimi with a soy-based sauce. ",
+        "price": "$21",
+        "photo": "img/Rainbow-Sashimi-1-300x200.jpg"
+      },
+      {
+        "title": "Spicy Sunshine (4 pcs)",
+        "description": "A tasty seasoned tartar of fresh scallops and crab, served on 4 sweet potato chips.",
+        "price": "$23",
+        "photo": "img/Spicy-Sunshine-tartar.jpg"
+      },
+      {
+        "title": "Mango Tango* (8 pcs)",
+        "description": "Tempura shrimp, raw scallop, tobiko and mango strips rolled in soya bean leaf.",
+        "price": "$22",
+        "photo": "img/Mango-Tango-the-mango.jpg"
+      },
+      {
+        "title": "Rose Maki (8 pcs)",
+        "description": "A soya bean leaf wrapped roll with tuna, tempura <br> shrimp, avocado, tobiko and fresh asparagus.",
+        "price": "$22",
+        "photo": "img/Rose-Maki-300x200.jpg"
+      },
+      {
+        "title": "New York*",
+        "description": "Srimp tempura, orange, massago, spicy mayo.",
+        "price": "$21",
+        "photo": "img/new-york-300x200.jpg"
+      },
+      {
+        "title": "Roméo et Juliette* (6 pcs)",
+        "description": "A slightly tempura breaded roll with tempura <br> shrimps, strawberries, pineapple and blueberries.",
+        "price": "$20",
+        "photo": "img/Romeo-300x200.jpg"
+      },
+
+      {
+        "title": "Dragon Ears (4 pcs)",
+        "description": "Tartare of tuna, crab and shrimp with avocado served on wonton chips",
+        "price": "$23",
+        "photo": "img/Dragon-Ears-300x200.jpg"
+      },
+
+      {
+        "title": "Summer Roll (6 pcs)",
+        "description": "Spicy crab, spicy tuna, avocado, tobiko, wrapped with cucumber.",
+        "price": "$23",
+        "photo": "img/summer-roll-2-1-300x200.jpg"
+      },
+
+      {
+        "title": "Venus* (8 pcs)",
+        "description": "A light tempura roll with spicy salmon, avocado,<br> tobiko, shiso leaf, fried onion and carrots.",
+        "price": "$21",
+        "photo": "img/Venus-300x200.jpg"
+      },
+
+      {
+        "title": "Phoenix* (8 pcs)",
+        "description": "Crabsticks, avocado, mango and fried onions rolled <br>in soya paper topped off with tuna sashimi.",
+        "price": "$21",
+        "photo": "img/Phoenix-1-300x200.jpg"
+      },
+
+      {
+    "title": "French Kiss (4 pcs)",
+    "description": "A tastily seasoned tartar of fresh shrimps, salmon<br> and tuna,  served on 4 shrimps chips with tobiko.",
+    "price": "$22",
+    "photo": "img/french-kiss-1-300x200.jpg"
+ 
+    }
+  ]
+}

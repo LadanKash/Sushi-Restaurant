@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="style.css"?>
+<sushi_menu>
+
+   <menu>
+   <food>
+       <title>Aikawa Tuna (8 pcs)</title>
+       <description>White tuna sashimi garnished with fresh mango and grilled garlic.</description>
+       <price>$22</price>
+       <photo>images/Aikawa Tuna.jpg</photo>
+   </food>
+   <food>
+       <title>Atlantis (8 pcs)</title>
+       <description>Crabstick, asparagus, fried carrot, tempura, tobiko, and avocado rolled in a soya bean leaf, topped with smoked-salmon.</description>
+       <price>$21</price>
+       <photo>images/Atlantis.jpg</photo>
+   </food>
+   <food>
+       <title>Empress (8 pcs)</title>
+       <description>Fresh salmon and tuna sashimi rolled in tofu leaf, topped with tobiko and mango.</description>
+       <price>$822</price>
+       <photo>images/Empress.jpg</photo>
+   </food>
+   <food>
+       <title>Salmon Sensation (8 pcs)</title>
+       <description>Spicy salmon, avocado, lettuce, shiso leaf, tobiko.</description>
+       <price>$21</price>
+       <photo>images/Salmon Sensation.jpg</photo>
+   </food>
+   <food>
+       <title>Jade (8 pcs)</title>
+       <description>Fresh salmon and tuna sashimi rolled in seaweed slightly breaded with tempura, topped with tobiko</description>
+       <price>$22</price>
+       <photo>images/Jade.jpg</photo>
+   </food>
+   <food>
+       <title>Jumbo Ébi (8 pcs)AC</title>
+       <description>Katsu jumbo shrimps served with chef’s spicy sauce and tobiko.</description>
+       <price>$22</price>
+       <photo>images/Jumbo Ébi.jpg</photo>
+   </food>
+   <food>
+       <title>Spicy Sunshine (4 pcs)</title>
+       <description>A tasty seasoned tartar of fresh scallops and crab, served on 4 sweet potato chips.</description>
+       <price>$23</price>
+       <photo>images/Spicy-Sunshine.jpg</photo>
+   </food>
+   <food>
+       <title>Mango Tango* (8 pcs)</title>
+       <description>Tempura shrimp, raw scallop, tobiko, and mango strips rolled in soya bean leaf.</description>
+       <price>$22</price>
+       <photo>images/Mango-Tango.jpg</photo>
+   </food>
+   <food>
+       <title>Secret Garden* (8 pcs)</title>
+       <description>Soya bean leaf roll with spicy salmon, cream cheese, avocado, tobiko, crab meat, and shrimp chips wrapped in a banana leaf.</description>
+       <price>$21</price>
+       <photo>images/Secret-Garden.jpg</photo>
+   </food>
+   <food>
+       <title>Sweet Temptation* (8 pcs)</title>
+       <description>Crabstick, katsu scallop, tobiko, avocado, and cucumber.</description>
+       <price>$22</price>
+       <photo>images/Sweet-Temptation.jpg</photo>
+   </food>
+</menu>
